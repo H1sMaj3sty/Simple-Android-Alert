@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/judulAplikasi"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:text="Simple Alert"
+        android:textSize="25dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="1dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        />
+
+
+    <EditText
+        android:id="@+id/telpNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="13"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/judulAplikasi"
+        android:hint="Masukkan Nomor Telpon"
+        />
+    <Spinner
+        android:id="@+id/dropMenu"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/judulAplikasi"
+        android:layout_toRightOf="@id/telpNum"
+        android:layout_marginTop="15dp"
+        />
+
+    <Button
+        android:layout_below="@id/dropMenu"
+        android:id="@+id/tombolAllert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_corner"
+        android:text="Alert"
+        android:onClick="alertNotif"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        />
+</RelativeLayout>

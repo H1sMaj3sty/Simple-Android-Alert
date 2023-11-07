@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Simple Alert</string>
+    <string-array name="listSpinner">
+        <item>Home</item>
+        <item>Work</item>
+        <item>School</item>
+        <item>Mobile</item>
+        <item>Other</item>
+    </string-array>
+</resources>
